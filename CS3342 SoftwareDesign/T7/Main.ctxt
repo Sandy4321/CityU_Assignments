@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=cmd\ p\ hour
+comment1.target=void\ operatePhone(java.lang.String,\ Phone,\ int)
+numComments=2

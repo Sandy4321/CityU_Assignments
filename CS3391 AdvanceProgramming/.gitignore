@@ -1,0 +1,13 @@
+*/.vscode/*
+.vscode/settings.json
+.vscode/ipch/*
+
+*/.vscode/settings.json
+*/.vscode/ipch/*
+
+
+*/a.out
+a.out
+
+# in.txt
+# out.txt

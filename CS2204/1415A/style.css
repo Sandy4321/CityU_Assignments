@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+}
+#MainContainer{
+	width:80%;
+	margin: 0 auto;
+	/*vertical-align: middle;*/
+}
+
+#Block1 img{
+	/*float:left;*/
+	display: inline-block;
+	/*vertical-align: middle;*/
+	/*padding-top: 1%;*/
+}
+#Block1 h1{
+	display: inline-block;
+	/*display: inline-block;*/
+	vertical-align: middle;
+}
+
+#Block2{
+	width:65%;
+	float:left;
+}
+
+#tables, #food{
+	width:49%;
+	border-style: solid;
+	height:30px;
+	display: inline-block;
+	border-radius:10px 10px 0 0 ;
+}
+
+#food{
+	background-color:silver;
+}
+
+#table1,#table2{
+	border-radius: 50%;
+	width: 100px;
+	height:100px;
+	background-color: white;
+	border-color:black;
+	border-style:solid;
+	border-width: 1px;
+	display:inline-block;
+	margin:2%;
+}
+
+#table3,#table4{
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	margin:2%;
+	border-style: solid;
+	border-color:black;
+	border-width: 1px;
+	display:inline-block;
+}
+
+#menuItems{
+	display: none;
+}
+
+.menuItem form input[type="textbox"]{
+	width:120px;
+}
+
+.menuItem form input[type="number"]{
+	width:30px;
+}
+
+#Block3{
+	float:left;
+	width: 32%;
+
+}
+
+#Block4{
+	clear:both;
+
+}
+iframe{
+	width: 100%;
+}
+
+table{
+	width: 100%;
+}
+table thead,table tfoot{
+	background-color: silver;
+}
+
+
+
+

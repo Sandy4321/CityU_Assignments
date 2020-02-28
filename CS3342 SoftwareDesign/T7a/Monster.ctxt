@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Monster()
+comment1.params=damage
+comment1.target=void\ hurt(int)
+comment2.params=
+comment2.target=boolean\ isAlive()
+numComments=3

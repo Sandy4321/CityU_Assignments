@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>
+		City Cafe - Order
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="init()">
+	<div id="MainContainer">
+	<div id="Block1">
+		<img src="" alt="Logo" title="Logo">
+		<h1>City Cafe</h1>
+	</div>
+	<div id="Block2">
+		<div id="tables">
+			<h3 id="tablesTabTitle">
+				Tables
+			</h3>
+		</div><!--
+		--><div id="food">
+			<h3 id="foodTabTitle">
+				Food
+			</h3>
+		</div>
+		<div id="tableSelection">
+			<div id="table1">
+			</div>
+			<div id="table2">
+			</div><br>
+			<div id="table3">
+			</div>
+			<div id="table4">
+			</div>
+		</div>
+		<div id="menuItems">
+			<div class="menuItem">
+				<form action="index.html" method="get">
+				<input type="textbox" name="Name" value="Sushi">
+				<lable for="Quantity">qty</lable><input type ="number" name="Quantity" value="0">
+				<input type="submit" name="Add" value="Add">
+				<img src="" alt="Menu Image" title="Menu Image">
+			</form>
+			</div>
+			<div class="menuItem">
+				<form action="index.html" method="get">
+				<input type="textbox" name="Name" value="Cocktail">
+				<lable for="Quantity">qty</lable><input type ="number" name="Quantity" value="0">
+				<input type="submit" name="Add" value="Add">
+				<img src="" alt="Menu Image" title="Menu Image">
+			</form>
+			</div>
+		</div>
+	</div>
+	<div id="Block3">
+		<iframe src="table.html" id="iframe">
+		<p>Your Browser doesnt support iframe
+		</p>
+	</iframe>
+	</div>
+	<footer id="Block4">
+		<p id="CopyrightNotice">
+			@copyright 2014 City Cafe - All Rights Reserved 
+		</p>
+	</footer>
+
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Manager()
+comment1.params=amount
+comment1.target=void\ process(double)
+numComments=2

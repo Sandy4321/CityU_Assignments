@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Phone()
+comment1.params=
+comment1.target=double\ getBattery()
+comment2.params=hour
+comment2.target=void\ be_played_for(int)
+comment3.params=hour
+comment3.target=void\ be_charged_for(int)
+comment4.params=hour
+comment4.target=void\ be_played_music_for(int)
+numComments=5

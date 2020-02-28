@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <title>Life Insurance Calculator | City Insurance Agency</title>
+            <meta charset="utf-8">
+            <link rel="icon" type="image/ico" href="/Content/images/favicon.ico">
+                <meta name="robots" content="">
+
+
+    <link href="https://www.aigdirect.com:443/bundles/bootstrapmincss?v=neIdUiCGgeSjQyl4CAvSiY1VoP5iC1LYKfr9ywHn_0k1" rel="stylesheet">
+
+    <link href="https://www.aigdirect.com:443/bundles/awesomemincss?v=LPUfGf0ZD72_PpN4XcE7f3s2eK0RLchSNEbiYaANUiU1" rel="stylesheet">
+
+    <link href="https://www.aigdirect.com:443/bundles/sharedcss?v=hnksH4x40rZNpGv9mNkj01xYl2c_w0s_UYtdfMXxj-w1" rel="stylesheet">
+
+    <link href="https://www.aigdirect.com:443/bundles/prettycheckablecss?v=7G9Lg5xOr5BFWj46DgF876eW04WcpZjsDyGa2m-kphs1" rel="stylesheet">
+
+
+
+
+<link href="https://www.aigdirect.com:443/bundles/coresitecss?v=8hgS7CyqKFSp7xwsS5-oVCEIO6m2h-jnx7oaxzodjuY1" rel="stylesheet">
+<link href="https://www.aigdirect.com:443/bundles/sharedcorecss?v=he4FyAvhw9zYcJlVtEtCX1gBQTtgapH6scaxiF7V7Rso1" rel="stylesheet">
+<link href="https://www.aigdirect.com:443/documents/content.css" rel="stylesheet">
+<link href="https://www.aigdirect.com:443/documents/ada.css" rel="stylesheet">
+<link href="https://www.aigdirect.com:443/documents/blog.css" rel="stylesheet">
+<style media="screen,print">
+iframe {
+	width:100%;
+	margin:0 0 1em;
+	border:0;
+	overflow:hidden;
+}
+@media (max-width: 767px) {
+
+.margin-left15n{
+    margin-left: -15px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div id="aig-page-wrapper">
+<!--Page header starts here-->
+<header class="aig-header" id="aig-header">
+
+            <div class="aig-header-top-bar hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9  pull-right">
+                            <div class="pull-right">
+                                <form class="navbar-form navbar-left" id="aig-searchform" role="search" method="get" action="/search-results">
+                                    <div class="form-group">
+                                        <label class="sr-only">Search</label>
+                                        <input type="text" id="aig-search" name="q" class="aig-search form-control pull-left" title="Search" placeholder="Search...">
+                                        <button id="btnSearch" style="display: none;" type="submit" title="Go" class="btn btn-primary aig-search-btn">Go</button>
+                                        <i class="fa fa-search fa-lg pull-right" title="Search" id="aig-search-icon" style="color:#bbb;"></i>
+                                    </div>
+                                </form>
+                            </div>
+                            <span class="pull-right">
+                                <ul class="list-inline">
+
+
+
+                                            <li class="dropdown">
+                                                <span class="dropdown-toggle top-dropdown" data-toggle="dropdown" title="About Us" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></span>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a title="About Us">About Us</a></li>
+                                                                <li><a title="Customer Reviews">Customer Reviews</a></li>
+                                                                <li><a title="Why AIG Direct">Why AIG Direct</a></li>
+                                                                <li><a title="Our History">Our History</a></li>
+                                                                <li><a title="Executive Team">Executive Team</a></li>
+                                                                <li><a title="Contact Us">Contact Us</a></li>
+
+                                                </ul>
+                                            </li>
+
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <div class="aig-header-content-bar hidden-xs" id="aig-header-content-bar" data-spy="affix" data-offset-top="800">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 pull-left">
+                            <a href="/" title="AIG Direct">
+                                <img alt="AIG Direct" src="cityu.png" class="img-responsive" id="aig-logo">
+                            </a>
+
+                </div>
+
+
+
+                    <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 pull-right " id="aig-header-scrolledContent">
+                        <div class="row">
+                            <section class="col-xs-7 col-md-6 aig-request-quote">
+                                <!-- Split button -->
+                                <div class="btn-group pull-right">
+                                    <button type="button" id="aig-header-requestbuttongrp" class="btn bluebutton-Nav" title="REQUEST A QUOTE">REQUEST A QUOTE</button>
+                                </div>
+                            </section>
+                            <section class="col-xs-5 col-md-6 header-text text-left pull-right">
+                                <span class="aig-quote-subtext text-left">Quote Hotline</span>
+                                <p class="text-left">2180-0000</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 pull-right " id="aig-header-unscrolledContent" style="padding-top: 6px;">
+                        <p class="text-right unscrolledContent-phonenumber">
+                            <span>Quote Hotline</span>
+                            2180-0000
+                        </p>
+                    </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="check hidden-xs">
+
+    </div>
+
+</header>
+<!--Page header ends here-->
+<!--Navigation Wrapper starts here-->
+        <div id="aig-navigationWrapper" class="hidden-xs">
+            <div class="container">
+                <nav class="navbar navbar-aig" role="navigation" aria-label="Primary">
+                    <div class="row">
+                        <!--This wrapper is for bootstrap collapsing in different view modes-->
+                        <div class="collapse navbar-collapse js-navbar-collapse">
+                            <!--Main Navigation Menu-->
+                            <ul class="nav navbar-nav navbar-aig-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle mainnavtoggle" data-toggle="dropdown" title="LIFE INSURANCE PRODUCTS">LIFE INSURANCE PRODUCTS <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu navbar-aig-menu-submenu">
+<li>        <a title="Term Life Insurance">
+            Term Life Insurance
+        </a>
+</li><li>        <a title="Quality of Life">
+            Quality of Life
+        </a>
+</li><li>        <a title="Permanent Life Insurance">
+            Permanent Life Insurance
+        </a>
+</li><li>        <a title="Universal Life Insurance">
+            Universal Life Insurance
+        </a>
+</li><li>        <a title="Whole Life Insurance">
+            Whole Life Insurance
+        </a>
+</li><li>        <a title="Guaranteed Issue Whole Life Insurance">
+            Guaranteed Issue Whole Life Insurance
+        </a>
+</li><li>        <a title="Accidental Death Insurance">
+            Accidental Death Insurance
+        </a>
+</li>
+                                                    </ul>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a  class="dropdown-toggle mainnavtoggle" data-toggle="dropdown" title="LIFE INSURANCE BASICS">LIFE INSURANCE BASICS <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu navbar-aig-menu-submenu">
+<li>        <a title="What is Life Insurance">
+            What is Life Insurance
+        </a>
+</li><li>        <a title="How Does Life Insurance Work">
+            How Does Life Insurance Work
+        </a>
+</li><li>        <a title="Choosing a Life Insurance Policy">
+            Choosing a Life Insurance Policy
+        </a>
+</li><li>        <a title="What to Expect When You Apply for Life Insurance">
+            What to Expect When You Apply for Life Insurance
+        </a>
+</li><li>        <a title="Medical Exam Preparations">
+            Medical Exam Preparations
+        </a>
+</li><li>        <a title="Managing Your Life Insurance Policy">
+            Managing Your Life Insurance Policy
+        </a>
+</li><li>        <a title="Term Life Insurance Calculator">
+            Term Life Insurance Calculator
+        </a>
+</li><li>        <a title="Glossary of Terms">
+            Glossary of Terms
+        </a>
+</li>
+                                                    </ul>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a  class="dropdown-toggle mainnavtoggle" data-toggle="dropdown" title="ABOUT LIFE">ABOUT LIFE <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu navbar-aig-menu-submenu">
+<li>        <a title="Why Life Insurance">
+            Why Life Insurance
+        </a>
+</li><li>        <a title="Planning for Life Insurance">
+            Planning for Life Insurance
+        </a>
+</li><li>        <a title="Applying for Life Insurance">
+            Applying for Life Insurance
+        </a>
+</li><li>        <a title="Managing Your Policy">
+            Managing Your Policy
+        </a>
+</li>
+                                                    </ul>
+
+                                        </li>
+
+                            </ul>
+                        </div><!-- /.nav-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+<!--Navigation Wrapper ends here-->
+
+
+        <section id="optional-header-section">
+
+
+                    <div class="aig-content-imageContainer visible-xs mobile-banner" id="aig-content-imageContainer" style="background-color: #006699;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-center visible-xs">
+                                    <button type="button" id="openQuotebutton-content" class="btn btn-lg btn-warning custom-AIG-button mobile-button" title="GET YOUR FREE QUOTE">GET YOUR FREE QUOTE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="aig-breadCrumb hidden-xs" id="aig-breadCrumb">
+                        <div class="container">
+                            <div class="row">
+                                <ol class="breadcrumb">
+                                            <li><a title="Home">Home</a></li>
+                                            <li><a  title="Life Insurance Basics">Life Insurance Basics</a></li>
+                                            <li class="&quot;active&quot;"><a title="Term Life Insurance Calculator">Term Life Insurance Calculator</a></li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+<div class="pageBuilderLayout" id="contentContainer"><div class="row" id="IGXPresentationRow_717b6534d39063b71cd603638e794eec"><div class="col-sm-12  pagePresentationLayoutColumn" gridwidth="12" id="IGXPresentationColumn_989ac3e22117b7c6242e52531b9e288a"><div class="row container autoMargin" id="IGXPresentationRow_a5eced4fbf97de2b6d2f0151d4d8852c"><div class="col-sm-12  pagePresentationLayoutColumn" gridwidth="12" id="IGXPresentationColumn_36573e3d7b2932bd9d181e450ade67b8">		<div>
+			<div class="margin-left15n"><!--<h1 class="content-heading">Term Life Insurance Calculator</h1> -->
+<h1 class="content-heading">Term Life Insurance Calculator</h1>
+<h2 class="content-heading">How Much Life Insurance Do I Need?</h2>
+<p><br>The amount of life insurance you may need can increase or decrease with all the different changes in your life, such as getting married, buying a home, starting a family or getting a raise at your job.&nbsp; Planning for your family's future is an important one, so you should have all the information you need before you buy a term life insurance policy. Before you <a href="request-a-quote" title="buy a term life insurance policy">buy a term life insurance policy</a>, use our term life insurance calculator to make sure you are covered appropriately.</p>
+<p>Our term life insurance calculator includes economic forecasting which models income growth and growth of money you put in savings. So you'll have more information when it's time to buy your term life insurance policy.<br><br></p>
+</div>
+<div class="margin-left15n"><iframe frameborder="0" height="1100" id="external-frame" scrolling="no" src="https://www.aigdirect.com/vip/vipcalculator/?qepage=/x377.xml" title="Term Life Insurance Calculator" width="320"></iframe></div>
+		</div>
+
+
+</div></div></div></div></div>
+
+
+
+
+
+
+
+<!--Footer-->
+<footer id="aig-footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 visible-xs footer-mobile-phone">
+                <span class="footer-mobile-phone-intro">QUOTE HOTLINE</span><br><span class="footer-mobile-phone-number">800-294-4977</span>
+            </div>
+        </div>
+
+        <div class="row">
+
+                <!--Mobile footer content-->
+                <div class="panel-group visible-xs col-xs-12" id="aig-footer-accordion" role="tablist" aria-multiselectable="false">
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <div class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#aig-footer-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" title="INSURANCE PRODUCTS">
+                                            INSURANCE PRODUCTS
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled footer-list">
+
+                                                    <li><a title="Term Life Insurance">Term Life Insurance</a></li>
+                                                    <li><a title="Quality of Life">Quality of Life</a></li>
+                                                    <li><a title="Permanent Life Insurance">Permanent Life Insurance</a></li>
+                                                    <li><a title="Universal Life Insurance">Universal Life Insurance</a></li>
+                                                    <li><a title="Whole Life Insurance">Whole Life Insurance</a></li>
+                                                    <li><a title="Guaranteed Issue Whole Life Insurance">Guaranteed Issue Whole Life Insurance</a></li>
+                                                    <li><a title="Accidental Death Insurance">Accidental Death Insurance</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <div class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#aig-footer-accordion" title="INSURANCE BASICS" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            INSURANCE BASICS
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled footer-list">
+
+                                                    <li><a title="What is Life Insurance">What is Life Insurance</a></li>
+                                                    <li><a title="How Does Life Insurance Work">How Does Life Insurance Work</a></li>
+                                                    <li><a title="Choosing a Life Insurance Policy">Choosing a Life Insurance Policy</a></li>
+                                                    <li><a title="What to Expect When You Apply">What to Expect When You Apply</a></li>
+                                                    <li><a title="Medical Exam Preparations">Medical Exam Preparations</a></li>
+                                                    <li><a title="Managing Your Life Insurance Policy">Managing Your Life Insurance Policy</a></li>
+                                                    <li><a title="Term Life Insurance Calculator">Term Life Insurance Calculator</a></li>
+                                                    <li><a title="About Life Insurance Blog">About Life Insurance Blog</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <div class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#aig-footer-accordion" href="#collapseThree" aria-expanded="true" title="ABOUT US " aria-controls=" collapsethree">
+                                            ABOUT US
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled footer-list">
+
+                                                    <li><a title="Customer Reviews">Customer Reviews</a></li>
+                                                    <li><a title="About AIG Direct">About AIG Direct</a></li>
+                                                    <li><a title="Our History">Our History</a></li>
+                                                    <li><a title="Contact Us">Contact Us</a></li>
+                                                    <li><a title="Careers">Careers</a></li>
+                                                    <li><a title="Site Map">Site Map</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pull-right hidden-xs">
+                    <ul class="footerlist list-unstyled list-inline pull-left social-media-content">
+                        <li>
+                            <a  target="_blank" title="AIG Direct Facebook" class="aig-facebook">AIG Direct Facebook</a>
+                        </li>
+                        <li>
+                            <a  target="_blank" title="AIG Direct LinkedIn" class="aig-linkedin">AIG Direct LinkedIn</a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="AIG Direct Twitter" class="aig-twitter">AIG Direct Twitter</a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="AIG Direct YouTube" class="aig-youtube">AIG Direct YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 hidden-xs footer-desktop">
+                    <ul class="list-unstyled footer-list">
+                                <li><a title="INSURANCE PRODUCTS">INSURANCE PRODUCTS</a></li>
+                                    <li><a title="Term Life Insurance">Term Life Insurance</a></li>
+                                    <li><a title="Quality of Life">Quality of Life</a></li>
+                                    <li><a title="Permanent Life Insurance">Permanent Life Insurance</a></li>
+                                    <li><a title="Universal Life Insurance">Universal Life Insurance</a></li>
+                                    <li><a title="Whole Life Insurance">Whole Life Insurance</a></li>
+                                    <li><a title="Guaranteed Issue Whole Life Insurance">Guaranteed Issue Whole Life Insurance</a></li>
+                                    <li><a title="Accidental Death Insurance">Accidental Death Insurance</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 hidden-xs footer-desktop">
+                    <ul class="list-unstyled footer-list">
+                                <li><a title="INSURANCE BASICS">INSURANCE BASICS</a></li>
+                                    <li><a title="What is Life Insurance">What is Life Insurance</a></li>
+                                    <li><a title="How Does Life Insurance Work">How Does Life Insurance Work</a></li>
+                                    <li><a title="Choosing a Life Insurance Policy">Choosing a Life Insurance Policy</a></li>
+                                    <li><a title="What to Expect When You Apply">What to Expect When You Apply</a></li>
+                                    <li><a title="Medical Exam Preparations">Medical Exam Preparations</a></li>
+                                    <li><a title="Managing Your Life Insurance Policy">Managing Your Life Insurance Policy</a></li>
+                                    <li><a title="Term Life Insurance Calculator">Term Life Insurance Calculator</a></li>
+                                    <li><a title="About Life Insurance Blog">About Life Insurance Blog</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 hidden-xs footer-desktop">
+                    <ul class="list-unstyled footer-list">
+                                <li><a title="ABOUT US">ABOUT US</a></li>
+                                    <li><a title="Customer Reviews">Customer Reviews</a></li>
+                                    <li><a title="About AIG Direct">About AIG Direct</a></li>
+                                    <li><a title="Our History">Our History</a></li>
+                                    <li><a title="Contact Us">Contact Us</a></li>
+                                    <li><a title="Careers">Careers</a></li>
+                                    <li><a title="Site Map">Site Map</a></li>
+
+                    </ul>
+                </div>
+
+        </div>
+        <div class="row privacylinks hidden-xs">
+            <div class="col-xs-12">
+                <ul class="footerlist list-unstyled list-inline pull-left">
+                            <li><a title="Privacy Policy ">Privacy Policy </a></li>
+                                <li>|</li>
+                            <li><a title="Terms and Conditions">Terms and Conditions</a></li>
+                                <li>|</li>
+                            <li><a title="Legal Information">Legal Information</a></li>
+                                <li>|</li>
+                            <li><a title="Advertising Disclosures">Advertising Disclosures</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row privacylinks visible-xs">
+            <div class="col-xs-12">
+                <ul class="footerlist list-unstyled list-inline pull-left text-center">
+                            <li><a title="Privacy Policy ">Privacy Policy </a></li>
+                                <li>|</li>
+                            <li><a title="Terms and Conditions">Terms and Conditions</a></li>
+                            <li><a title="Legal Information">Legal Information</a></li>
+                                <li>|</li>
+                            <li><a title="Advertising Disclosures">Advertising Disclosures</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-muted aig-direct-copyright-text">
+                <p>&copy; 2018 AIG Direct Insurance Services, Inc. Agency services provided by AIG Direct Insurance Services, Inc. ("AIG Direct"), CA license # 0B57619 and AR license # 0100105378, a subsidiary of American General Life Insurance Company ("AGL"), Houston, TX and an affiliate of The United States Life Insurance Company in the City of New York ("US Life"), New York, NY, all members of American International Group ("AIG"). Each issuing insurance company is responsible for financial obligations of their respective insurance. Guarantees are backed by the claims-paying ability of the issuing insurance company. Products may not be available in all states and product features may vary by state. For all companies mentioned, their financial professionals and other representatives are not authorized to give legal, tax or accounting advice. For advice concerning your individual circumstances, consult a professional attorney, tax advisor or accountant.</p>
+
+        </div>
+    </div>
+    <div class="container visible-xs">
+
+
+    </div>
+</footer>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

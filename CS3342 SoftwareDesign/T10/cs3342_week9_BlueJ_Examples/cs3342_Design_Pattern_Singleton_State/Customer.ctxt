@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Customer()
+comment1.params=
+comment1.target=int\ getDiscount()
+comment2.params=
+comment2.target=int\ getDeposit()
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment4.params=
+comment4.target=int\ getExpenses()
+comment5.params=amount
+comment5.target=void\ newExpense(int)
+numComments=6
