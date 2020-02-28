@@ -1,0 +1,64 @@
+/* *{
+	background-color: #343A40;
+} */
+* {
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+	background: #474747;
+}
+
+.jumbotron {
+	background: #7c7c7c;
+	color: white;
+	box-shadow: 0 7px 1px #29292991;
+}
+
+.jumbotron h1 {
+	font-size: 4rem;
+	text-shadow: 0 5px 0px #29292991;
+}
+
+.nav {
+	border-bottom: 0px !important;
+}
+
+.nav-link {
+	color: white;
+	font-size: 1rem;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+	padding-left:20px;
+	padding-right:20px;
+	border-bottom-width:0px !important;
+	margin-bottom:0px !important;
+	margin-left:10px;
+	background: #474747;
+}
+
+.nav-link:hover {
+	color: white;
+}
+
+.tab-pane{
+	padding:10px;
+	box-shadow:0px 10px 0 #29292991;
+	border-radius: 10px !important;
+	background:white;
+}
+
+td{
+	font-size:20px;
+	width:60px;
+	height:60px;
+	color: black;
+	text-align: center;
+	background:lightgreen;
+	border:3px solid white;
+	border-radius:20px;
+}
+tbody .occupied{
+	background:red;
+}
+

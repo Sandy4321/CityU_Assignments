@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T10b</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//for loop
+		var strA = "12344adc 134";
+		function calcDigF(stringA){
+			var counter = 0;
+			for(var C =0;C<strA.length;C++){
+				if(!isNaN(strA.charAt(C)) && strA.charAt(C) != " "){
+					counter ++;
+				}
+			}
+			return counter;
+		}
+		document.write("<h2>Input string : " + strA + "</h2>");
+		document.write("<h2>No. of digits in the string: " + calcDigF(strA) + "</h2>");
+
+		// While loop
+		function calcDigW(stringA){
+			var counter = 0;
+			var C = 0;
+			while(C<stringA.length){
+				switch ((strA.charAt(C)<'0' || strA.charAt(C)>'9')? 0 : 1){
+					case 1 :
+						counter++;
+				}
+
+				C++;
+			}
+			return counter;
+		}
+		document.write("<h2>Input string : " + strA + "</h2>");
+		document.write("<h2>No. of digits in the string: " + calcDigW(strA) + "</h2>");
+
+		// Do-while loop
+		function calcDigD(stringA){
+			var counter = 0;
+			var C = 0;
+
+			do{
+				switch ((strA.charAt(C)<'0' || strA.charAt(C)>'9')? 0 : 1){
+					case 1 :
+						counter++;
+				}
+
+				C++;
+			}while(C<stringA.length)
+			return counter;
+		}
+		document.write("<h2>Input string : " + strA + "</h2>");
+		document.write("<h2>No. of digits in the string: " + calcDigD(strA) + "</h2>");
+	</script>
+
+</body>
+</html>

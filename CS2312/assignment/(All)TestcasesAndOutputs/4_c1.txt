@@ -1,0 +1,16 @@
+startNewDay|01-Jan-2018
+
+hire|Bob|30
+hire|John|30
+hire|May|20
+
+setupTeam|Production Team|Bob
+addTeamMember|Production Team|John 
+
+takeLeave|John|12-Jan-2018|18-Jan-2018
+
+takeLeave|Bob|13-Jan-2018|14-Jan-2018|Production Team|John
+takeLeave|Bob|13-Jan-2018|14-Jan-2018|Production Team|May
+takeLeave|Bob|3-Jan-2018|4-Jan-2018|Production Team|John
+
+listTeamMembers

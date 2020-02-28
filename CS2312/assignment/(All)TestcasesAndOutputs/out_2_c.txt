@@ -1,0 +1,45 @@
+Please input the file pathname: 2_c.txt
+
+> startNewDay|01-Jan-2018
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Carol|02-Jan-2018|08-Jan-2018
+Done.
+
+> takeLeave|Carol|02-Mar-2018|09-Mar-2018
+Done.
+
+> listLeaves
+Carol:
+2-Jan-2018 to 8-Jan-2018
+2-Mar-2018 to 9-Mar-2018
+
+> takeLeave|Carol|08-Mar-2018|10-Mar-2018
+Overlap with leave from 2-Mar-2018 to 9-Mar-2018!
+
+> takeLeave|Carol|02-Apr-2018|10-Apr-2018
+Insufficient balance.  5 days left only!
+
+> startNewDay|10-Feb-2018
+Done.
+
+> takeLeave|Carol|02-Feb-2018|03-Feb-2018
+Wrong Date.  System date is already 10-Feb-2018!
+
+> listLeaves
+Carol:
+2-Jan-2018 to 8-Jan-2018
+2-Mar-2018 to 9-Mar-2018
+
+> undo
+
+> takeLeave|Carol|02-Feb-2018|03-Feb-2018
+Done.
+
+> listLeaves
+Carol:
+2-Jan-2018 to 8-Jan-2018
+2-Feb-2018 to 3-Feb-2018
+2-Mar-2018 to 9-Mar-2018

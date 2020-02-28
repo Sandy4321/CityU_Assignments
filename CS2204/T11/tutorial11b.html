@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Photo Print</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <style type="text/css">
+  <!--
+  #top {
+	border: solid 1px black;
+	margin: 20px auto;
+	padding: 20px;
+	width: 640px;
+	text-align: center;
+  }
+  #nails {
+	border: solid 1px black;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	width: 640px;
+  }
+  #nails img {
+	margin-right: 5px;
+	border: solid 1px #d2e9ff;
+  }
+  --> 
+</style>
+
+</head>
+
+<body>
+
+<div id="top">
+<img id="bigImg" src="2big.jpg" alt="b2" />
+</div>
+<div id="nails">
+<img class ="smallImg" src="1nail.jpg" alt="n1"/>
+<img class ="smallImg" src="2nail.jpg" alt="n2"/>
+<img class ="smallImg" src="3nail.jpg" alt="n3"/>
+<img class ="smallImg" src="4nail.jpg" alt="n4"/>
+<p>Shuffle</p>
+</div>
+
+<script type="text/javascript">
+<!--
+  var img = document.querySelectorAll(".smallImg");
+  for(var i =0;i<img.length;i++){
+    img[i].onmouseover =function(){
+      changeToBig(this);
+    };
+  }
+  function changeToBig(m){
+    var string = m.alt.charAt(1)+"Big.jpg";
+
+    document.getElementById("bigImg").src = string;
+  }
+
+  document.querySelectorAll("div p")[0].onclick = function() {
+    alert("a");
+    var sequence = generateRandomSequence();
+    alert(sequence);
+  };
+
+  // to generate random sequence from 1 to 4 without repetition
+  function generateRandomSequence(){
+    // make an array
+    var sequence=[];
+    // loop 4 times to input 4 values
+    for(var i = 0 ; i < 4 ; i++){
+      sequence[i] = Math.random();
+    }
+    // return array
+    return sequence;
+  }
+-->
+</script>
+</body>
+</html>

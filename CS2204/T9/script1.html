@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type = "text/javascript">
+      //embbeded script
+      alert("Hello World! embbeded script");
+      document.write("<h1>Wrote By JavaScript on Head.</h1>");
+
+
+    </script>
+
+    <script type="text/javascript">
+      s1="Hi, I am a CityU student. My student number is:";
+      s2="20005";
+      s3=25;
+    </script>
+    <script src="js.js">
+      // linked script
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    //inline script
+      alert("Hello World!");
+      var my_name = "Cindy";
+      // my_name = Cindy”; is not valid (not declared, double quote is not closed)
+
+      var theNumber = 34;
+      // var the number = 34; is not valid (space)
+
+      var Address = "12 Onslow Ave. Epsom";
+      // var 2address = “12 Onslow Ave. Epsom”; is not valid (first letter should not be intger, double quote is different)
+      document.write("<p>This is my first JavaScript.</p>");
+
+      // _____QUESTION 4______
+      var someVal = 2;
+      alert(someVal);
+      someVal = someVal +2;
+      alert(someVal);
+      someVal = someVal * 10;
+      alert(someVal);
+      someVal = someVal + "20";
+      alert(someVal);
+      someVal = "Robert";
+      alert(someVal);
+    </script>
+
+
+    <script type="text/javaScript">
+      document.write(s1+s2+"<br>");
+      document.write(s2+ " minus " + s3 + " is: ");
+      document.write(s2-s3 +"<br><br>");
+      // the top part is not quoted rightly.
+      // there is no semicolon
+      // the result is :
+      /* Hi, I am a CityU student. My student number is:20005
+        20005 minus 25 is: 19980
+      */
+      // + sign is for appendation of words
+      // if math operators(Eg. +, -, *, /, %) is followed with adjacent integers they will be calculated according to maths
+    </script>
+
+    <script type="text/javaScript">
+        document.write("2500" * "abc" +"<br>");
+        document.write("abc" * 2500 +"<br>");
+        document.write("abc" * true +"<br>");
+        document.write("false * 2500 = <br> "+
+          false * 2500 +"<br>");
+        document.write("true * true = <br> "+
+          true * true +"<br><br>");
+
+        document.write("2500" + "abc" +"<br>");
+        document.write("abc" + 2500 +"<br>");
+        document.write(("abc" + true) +"<br>");
+        document.write("true + 2500 = (without brackets)<br> "+
+          true + 2500 +"<br>");
+          document.write("true + 2500 = (with brackets)<br> "+
+            (true + 2500) +"<br>");
+        document.write("true + true = (with brackets) <br> "+
+          (true + true) +"<br>");
+
+
+      // conclusion :
+      /*
+          1. The multiplication of string with others is invalid;
+          2. The true(1) and false(0) value are treated as 1 and 0 respectively outside the write function or was enclosed brackets;
+          3. Addition for both operands and string before operands is considered as append when there is string infront of the both operands inside write() function;
+      */
+    </script>
+
+
+  </body>
+</html>

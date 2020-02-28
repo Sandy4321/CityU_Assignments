@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Tutorial 10a</title>
+	<style type="text/css">
+	<!--
+	#container {margin: 100px auto;
+			   width: 640px;
+			   height: 480px;
+			   padding: 20px;
+			   text-align: center;
+	}
+	.note {
+	  width: 12%;
+	  float: left;
+	  height: 12%;
+	  border:  solid 2px MidnightBlue;
+	  border-radius: 100%;
+	  margin-right: 7px;
+	}
+	#id0 {background-color: CornflowerBlue;}
+	#id1 {background-color: Cornsilk;}
+	#id2 {background-color: Crimson;}
+	#id3 {background-color: Cyan;}
+	#id4 {background-color: DarkBlue;}
+	#id5 {background-color: DarkCyan;}
+	#id6 {background-color: DarkGoldenRod;}
+	
+	.note {
+	  opacity: 1;
+	}
+
+	.note:hover {
+	  opacity: 0.3;
+	}
+	div{
+   border: 1px solid black;
+   width: 50px;
+   height: 50px;
+}
+	-->
+	</style>
+	<script type="text/javascript">
+	<!--
+	var audio=new Array();
+	var audioFile= new Array("a.wav","b.wav","c.wav","d.wav","e.wav","f.wav","g.wav");
+	//pre-load audio files
+	for (i=0; i<audioFile.length; i++) {
+	  audio[i]= new Audio(audioFile[i]);
+	  audio[i].load();
+	}
+	function init() {
+	  //play a round of notes
+	  for (i=0; i<audioFile.length; i++) {
+	    audio[i].play();
+	  }
+	}
+	function playAudio(m) {
+	  audio[m].play();
+	}
+
+ 	
+	-->
+	</script>
+  </head>
+  <body onload="init();">
+    <div id="container">
+      <div id="id0" class="note">
+      </div>  
+      <div id="id1" class="note">
+      </div>  
+      <div id="id2" class="note">
+      </div>  
+      <div id="id3" class="note">
+      </div>  
+      <div id="id4" class="note">
+      </div>  
+      <div id="id5" class="note">
+      </div>  
+      <div id="id6" class="note">
+      </div>  
+    </div>
+
+    <div></div>
+<div></div>
+<div></div>
+    <script type="text/javascript">
+    	
+ 		// altho i is in a for loop i is not assign immediately into the playAudio instead the parameter to parse into play audio remain as it is staying as a i which is a variable
+window.onload = function(){
+var divv = document.getElementsByTagName("div");
+   for(i=0; i<divv.length; i++){
+      divv[i].onclick = function(){
+        alert(i);
+   }
+
+   }
+
+}
+
+var notes = document.querySelectorAll('.note');
+    	// notes[1].onmouseover = function() {playAudio(1)}; 
+ 		for(var i = 0 ; i < notes.length ; i++){
+ 			notes[i].onmouseover = function(){playAudio(this.id.charAt(2))
+ 			};
+ 		}
+ 		alert(i);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+<?php header("Location: https://cs3402.cs.cityu.edu.hk/~zhlow2/assignment/"); ?>

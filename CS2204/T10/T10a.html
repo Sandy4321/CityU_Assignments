@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T10a</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var scope="global";
+		function f() {
+			alert(scope);
+			// undefined was printed as this variable is only being created but not assigned.
+			var scope = "local";
+			alert(scope);
+			// "local" was printed as this variable is now assigned.
+		}
+		f();
+	</script>
+</body>
+</html>

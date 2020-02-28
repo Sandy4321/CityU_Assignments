@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tutorial 5b</title>
+</head>
+<body>
+	<div>
+	<h1>
+		Like your video - A Survey
+	</h1>
+	<hr>
+	</div>
+	<div>
+		<form method="get" action="http://courses.cs.cityu.edu.hk/cs2204/t5b-echo.html">
+			<label for="firstname">Your first name : </label>
+			<input type="text" name ="firstname"><br><br>
+
+			<label for="agegroup">Your Age Group :</label></br>
+			<input type="radio" name="agegroup" value="11-20">11-20</br>
+			<input type="radio" name="agegroup" value="21-40">21-40</br>
+			<input type="radio" name="agegroup" value="41-60">41-60</br></br>
+
+			<label for="nature">
+				<video controls>
+					<source src="http://courses.cs.cityu.edu.hk/cs2204/nature.mp4" type="video/mp4">
+					<source src="http://courses.cs.cityu.edu.hk/cs2204/nature.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+			</label>
+			<input type="checkbox" name="nature" value="nature"></br></br>
+
+			<label for="wonders">
+				<video controls>
+					<source src="http://courses.cs.cityu.edu.hk/cs2204/wonders.mp4" type="video/mp4">
+					<source src="http://courses.cs.cityu.edu.hk/cs2204/wonders.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+			</label>
+			<input type="checkbox" name="wonders" value="wonders"></br></br>
+
+			<input type="submit" value="OK">
+			<input type="reset" value="clear">
+		</form>
+	</div>
+
+</body>
+</html>

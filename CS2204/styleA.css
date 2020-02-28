@@ -1,0 +1,90 @@
+*{
+	margin:0px;
+	padding:1px;
+	
+}
+
+body{
+	margin:auto;
+	width:99%;
+	height:99%;
+}
+
+body div{
+	float:left;
+}
+
+#Block1{
+	width:30%;
+	/*height:85%;*/
+	display:inline-block;
+}
+
+#Block1 *{
+	text-align: center;
+}
+
+#OrderInfo{
+	width:100%;
+}
+
+#OrderInfo td{
+	text-align:right;
+}
+
+#OrderInfo td:first-child{
+	text-align:left;
+	/*background-color: black;*/
+}
+#Tablefooter td:first-child{
+	text-align:right;
+}
+
+#OrderInfo thead,#OrderInfo tfoot{
+	background-color:silver;
+}
+
+#Block2{
+	display:inline-block;
+	width:69%;
+}
+
+#Block2 video{
+	width:95%;
+	margin:0 auto;
+}
+#PromotionalMaterial{
+	width:100%;
+}
+
+#SushiMenuTitle,#DrinksMenuTitle,#DessertMenuTitle{
+	width:31%;
+	border-style: solid;
+	border-width: 1% 1% 0 1%;
+	border-radius: 4px 4px 0 0;
+	display:inline-block;
+}
+
+.MenuItems{
+	width:33%;
+	display: inline-block;
+}
+#MenuTabs{
+	width:99%;
+}
+.MenuItems *{
+	float:left;
+}
+
+.MenuItems img{
+	width:76%;
+
+}
+.MenuItems button,.MenuItems input{
+	width:20%;
+}
+
+#Block3{
+	width:100%;
+	text-align: center;
+}
