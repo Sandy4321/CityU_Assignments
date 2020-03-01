@@ -1,0 +1,192 @@
+===== To Compile =====
+g++ 54924670.cpp -o 5492470 
+
+===== To Run =====
+./54924670
+
+===== Test Cases =====
+--- Case 1: create a background process and exit
+bg demo hello 4 7
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 31506
+PMan: > bg demo hello 4 7
+pid: 31520
+PMan: > hello
+exithello
+
+Terminated : 31520
+zhlow2@cs3103-01:~/CS3103/asg1$ 
+
+
+
+--- Case 2: start and stop and start again
+bg demo hello 4 7
+bgstop <pid>
+bgstart <pid>
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 1365
+PMan: > bg demo hello 4 7
+pid: 1458
+PMan: > hello
+bgstop 14hello
+58
+Stopped : 1458
+PMan: > bgstart 1458
+Started : 1458
+PMan: > hello
+exit
+Terminated : 1458
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+
+
+
+---- Case 3: start and terminate
+bg demo hello 4 7
+bgkill <pid>
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 31615
+PMan: > bg demo hello 4 7
+pid: 31621
+PMan: > hello
+bgkill 31621
+Terminated : 31621
+PMan: > exit
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+
+
+--- Case 4: create and create 
+bg demo hello 4 7
+bg demo hello 4 7
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 31655
+PMan: > bg demo hello 4 7
+pid: 31657
+PMan: > hello
+bg demo hello
+4 7
+Error: there is a backgroundprocess already
+PMan: > ehello
+xit
+Terminated : 31657
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+
+--- Case 5: create, wait self termination and create
+bg demo hello 1 1
+bg demo hello 1 4
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 31733
+PMan: > bg demo hello 1 1
+pid: 31766
+PMan: > hello
+bg demo hello 1 1
+pid: 31791
+PMan: > hello
+exit
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+
+
+--- Case 6: stop,start,terminate when there is no process
+bgstart 123
+bgstop 123
+bgkill 123
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 31892
+PMan: > bgstart 123
+No stopped background process to start.
+PMan: > bgstop 123
+No running background process to stop
+PMan: > bgkill 123
+No background process to kill.
+PMan: > exit
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+--- Case 7: create, stop and stop, start and start, terminate and terminate 
+bg demo hello 5 10
+bgstop <pid>
+bgstop <pid>
+bgstart <pid>
+bgstart <pid>
+bgkill <pid>
+bgkill <pid>
+exit
+
+OUTPUT:
+
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 32658
+PMan: > bg demo hello 5 10
+pid: 32684
+PMan: > hello
+bgstop 32684hello
+
+Stopped : 32684
+PMan: > bgstop 32684
+No running background process to stop
+PMan: > bgstart 32684
+Started : 32684
+PMan: > hello
+bgstart 32684
+No stopped background process to start.
+PMan: > hello
+bgkill 324hello
+The pid is not a valid process id of a background process.
+PMan: > bghello
+killhello
+32684
+Command not found.
+PMan: > bgkillhello
+ 32684
+Terminated : 32684
+PMan: > bgkill 32684
+No background process to kill.
+PMan: > exit
+zhlow2@cs3103-01:~/CS3103/asg1$
+
+
+--- Case 8: create, stop with wrong pid
+bg demo hello 4 7
+bgstop 123
+exit
+
+OUTPUT:
+zhlow2@cs3103-01:~/CS3103/asg1$ ./54924670
+ ===== Welcome to PMan =====
+This process have pid: 600
+PMan: > bg demo hello 4 7
+pid: 617
+PMan: > hello
+bgkill 123
+The pid is not a valid process id of a background process.
+PMan: > hello
+exit
+Terminated : 617
+zhlow2@cs3103-01:~/CS3103/asg1$
+
